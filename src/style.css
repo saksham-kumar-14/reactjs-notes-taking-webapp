@@ -1,0 +1,239 @@
+/*rgba(173, 239, 209, 1.00);*/
+
+/*import stuff*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+/*font-family: 'Lato', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+
+/*applying styles globally*/
+html{
+    background-color: rgb(230,230,230);
+    color: black;
+}
+
+::selection{background-color: rgb(20,20,20);color: white;}
+
+/*delete note pop up*/
+.delete-pop-up{
+    display: flex;
+    width: 100vw; height: 5vw;
+    color: white; background-color: rgb(255, 106, 106);
+    margin-bottom: 2vw;
+}.delete-pop-up-btn{
+    margin-left: 39vw;
+    width: 3vw; height: 3vw; margin-top: 1vw;
+}.delete-pop-up-text{
+    margin-left: 40vw;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1.1vw;
+}
+
+/*applying styles to the heading*/
+.heading{
+    margin-bottom: 5vw;
+}
+.heading-1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: black; 
+    font-size: 4.5vw;
+}.heading-2{
+    display: flex; justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(95, 95, 95);
+    font-size: 2vw;
+    margin-left: 20vw;
+}
+
+
+/*applying css to the header*/
+.note-input{
+    display: flex; justify-content: center;
+}.note-input-btn{
+    width: 10vw; height: 5vh;
+    margin-bottom: 2vw;
+    background-color: white;
+    color: black;
+    border: solid black 0.2vw;
+    border-radius: 1vw;
+    transition:  0.4s;
+}
+.note-input-btn:hover{
+    box-shadow: 0.15vw 0.15vw rgb(50,50,50);
+}
+
+/*applying styles to the body*/
+.note-link{
+    display: flex; justify-content: center;
+    margin: 0.2vw;
+}.note-title-link{
+    font-family: 'Sarala', sans-serif;
+    font-size: 1.8vw;
+    cursor: pointer;
+}.note-title-link:hover{
+    color: rgb(95, 95, 95);
+    font-weight: bolder;
+}.note-edit-btn{
+    background-color: orange;
+    color : rgb(230,230,230); 
+    border: solid black 0.1vw;
+    width: 4.5vw; height: 3vw; 
+    margin-left: 1.5vw; margin-right: 0.5vw;
+    font-size: 1.5vw;
+    transition: 0.4s;
+}.note-edit-btn:hover{
+    background-color: white;
+    color: black;
+}.note-delete-btn{
+    background-color: red;
+    color: rgb(230,230,230);
+    border: solid black 0.1vw;
+    width: 5vw; height: 3vw;
+    margin-left: 0.5vw; margin-right: 0.5vw;
+    font-size: 1.5vw;
+    transition: 0.4s;
+}.note-delete-btn:hover{
+    background-color: white;
+    color: black;
+}.body-divider{
+    margin-left: 20vw; margin-right: 20vw;
+    margin-top: 2vw; margin-bottom: 2vw;
+}
+
+
+/*Adding styles to the detailed note */
+.note-details-temp{
+    display: flex;
+    justify-content: center;
+}.note-details{
+    background-color: white;
+    border: solid black 0.1vw;
+    border-radius: 2.5vw;
+    width: 80vw;
+}.note-details-go-back-btn{
+    width: 5vw; height: 3vw;
+    background-color: green;
+    color: white;
+    border: solid black 0.1px;
+    transition: 0.5s;
+    margin-left: 5vw;
+    margin-bottom: 1vw;
+}.note-details-go-back-btn:hover{
+    background-color: rgb(10, 196, 10);
+}.note-details-heading{
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: center;
+}.note-details-description{
+    font-size: 1.25vw;
+    margin-left: 2vw;
+}
+
+
+/*note creation form */
+.note-creation{
+    background-color: rgb(50,50,50);
+    padding: 0.5vw;
+    width: 35vw; height: 24vw;
+    margin: 1.5vw;
+    border-radius: 4vw;
+    transition: 1s;
+}.note-creation:hover{
+    box-shadow: 0.45vw 0.45vw rgb(156, 148, 148);;
+}
+.note-creation-title{
+    display: flex; justify-content: center;
+    outline: none;
+    margin: 1.5vw;
+    width: 31.5vw;
+    height: 2vw;
+}
+.note-creation-description{
+    display: flex;
+    justify-content: center;
+    width: 31.5vw; height: 10vw;
+    outline: none;
+    margin: 1.5vw;
+}
+.note-creation-submit-btn{
+    margin: 1.5vw;
+    width: 6vw; height: 6vh;
+    background-color: rgb(0,255,0);
+    color: white;
+    border: solid black 0.1px;
+    transition: 0.4s;
+    font-size: 1.3vw;
+}.note-creation-submit-btn:hover{
+    background-color: rgb(70,255,70); 
+    color: black;
+}
+.note-creation-cancel-btn{
+    margin: 1.5vw;
+    width: 6vw; height: 6vh;
+    background-color: rgb(255,0,0);
+    color: white;
+    border: solid black 0.1px;
+    transition: 0.4s;
+    font-size: 1.3vw;
+}.note-creation-cancel-btn:hover{
+    background-color: rgb(255,30,30);
+    color: black;
+}
+.note-input-form{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Note Update form*/
+.edit-note-form-outer{
+    display: flex; 
+    justify-content: center;
+}
+.edit-note-form{
+    background-color: rgb(50,50,50);
+    color: white;
+    padding: 2vw;
+    border: solid rgb(50,50,50) 0.1px;
+    border-radius: 2vw;
+    width: 30vw; height:40vh;
+    transition: 1s;
+}.edit-note-form:hover{
+    box-shadow: 0.45vw 0.45vw rgb(156, 148, 148);
+}.edit-note-form-title{
+    width: 28vw; height: 2vw;
+    outline: none;
+    margin: 0.5vw;
+}.edit-note-form-description{
+    width: 28vw; height: 10vw;
+    outline: none;
+    margin: 0.5vw;
+}.edit-note-form-submit-btn{
+    margin: 1.5vw;
+    width: 6vw; height: 6vh;
+    background-color: rgb(0,255,0);
+    color: white;
+    border: solid black 0.1px;
+    transition: 0.4s;
+    font-size: 1.3vw;
+} .edit-note-form-submit-btn:hover{
+    background-color: rgb(70,255,70);
+    color: black;
+}.edit-note-form-cancel-btn{
+    margin: 1.5vw;
+    width: 6vw; height: 6vh;
+    background-color: rgb(255,0,0);
+    color: white;
+    border: solid black 0.1px;
+    transition: 0.4s;
+    font-size: 1.3vw;
+}.edit-note-form-cancel-btn:hover{
+    background-color: rgb(255,30,30);
+    color: black;
+}
+
+
+
